@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#logo {
+    font-size: 3rem;
+    padding: 0 0 10px 50px;
+}
+
+.nav-item {
+    display: block;
+    align-self: center;
+    margin-left: 50px;
+}
+.nav-item a {
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+}
+.nav-item a:hover {
+    background: steelblue;
+}
+
+.jumbotron {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: url("img/baked-beans.jpg"); */
+}
+
+.jumbotron i {
+    margin-top: 200px;
+    display: block;
+    width: 100%;
+    text-align: center; 
+}

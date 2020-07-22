@@ -8,25 +8,65 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Can'o'Lini</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/fcf7db413f.css">
+
+    <title>Can-o-Lini</title>
 
 </head>
 
 <body>
 
     <!-- This is going to be a fairly standard navbar with links and scrollspy connected to each section of the page -->
-    <nav>
+    <div class="container">
+        
+    </div>
 
-        <div class="container">
-            Test
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a src="img/" id="logo" href="#" class="navbar-brand">
+            Can-o-Lini
+        </a>
+        
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-center">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Jumbo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Intro</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Quick Facts</a>
+                </li class="nav-item">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Nutrition</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Doctor's Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Buying Guide</a>
+                </li>
+            </ul>
         </div>
         
     </nav>
 
     <!-- This will be a jumbotron class -->
-    <div class="container">
+    <div class="container-fluid jumbotron">
         <section>
             <h1>Cannellini Beans</h1>
+            <h3>The Foundational Bean</h3>
+            <i class="fa fa-chevron-down fa-5x" aria-hidden="true"></i>
         </section>
     </div>
 
@@ -155,7 +195,7 @@
         </section>
     </div>
 
-    <!-- The idea for this originally is to make fun of what is blatant guerilla marketing in the original url where a single link on the top and bottom of the page goes to a specific retailer of beans. Instead, I wanted to display products from Amazon (yes, I am aware of the irony) with different brands of cannellini beans -->
+    <!-- The idea for this originally is to make fun of what is blatant guerilla marketing in the original url where a single link on the top and bottom of the page goes to a specific retailer of beans. Instead, I wanted to display products from Amazon (yes, I am aware of the irony) with different brands of cannellini beans. This is why it's in API consumption, but might be removed later. -->
     <div class="container">
         <section>
             <h2>Buying Guide</h2>
