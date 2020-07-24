@@ -1,44 +1,191 @@
+:root {
+    --logo-font: 'Reenie Beanie', cursive;
+    --header-font: 'Indie Flower', cursive;
+    --body-font: 'Roboto', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-#logo {
-    font-size: 3rem;
-    padding: 0 0 10px 50px;
-}
-
-.nav-item {
-    display: block;
-    align-self: center;
-    margin-left: 50px;
-}
-.nav-item a {
-    width: 150px;
-    text-align: center;
-    border-radius: 5px;
-}
-.nav-item a:hover {
-    background: steelblue;
-}
-
-.jumbotron {
-    padding-top: 5rem;
+/* Utility Classes */
+.section-header {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    padding-bottom: 3rem; 
+}
+
+body {
+    font-family: var(--logo-font);
+    font-size: 2rem;
+    background: #333;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p {
+    font-family: var(--body-font);
+}
+h1 {
+    font-family: var(--header-font);
+}
+ul {
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+ul li {
+    padding: 1rem 0 1rem 0;
+}
+
+/* Header Stuff */
+.flex-container-navbar {
+    background-color: #333;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    
+    padding: .5rem 2rem .5rem 2rem;
+    flex-basis: 10%;
+}
+.logo {
+    font-family: var(--logo-font);
+    font-size: 4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.flex-container-navbar ul {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+/* Jumbotron Properties */
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    /* background: url("img/baked-beans.jpg"); */
+    
+    /* padding-bottom: 20px; */
+
+    color: #fff;
+
+    background-image: url("/1.\ API\ Consumption/img/baked-beans.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.jumbotron h1 {
+    font-family: var(--body-font);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+.jumbotron h2 {
+    font-size: 4rem;
+}
+.jumbotron i {
+    position: relative;
+    top: 200px;
+    font-size: 5rem;
+    cursor: pointer;
+}
+.jumbotron i:hover {
+    color: #ccc;
 }
 
-.jumbotron i {
-    margin-top: 200px;
-    display: block;
-    width: 100%;
-    text-align: center; 
+/* Introduction Section */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem 0 3rem 0;
+
+    background-color :lightblue;
+
+    color: #333;
+    font-family: var(--body-font);
+}
+.introduction h1 {
+    font-family: var(--body-font);
+    letter-spacing: .3rem;
+}
+.introduction img {
+    width: 100px;
+    margin-right: 50px;
+}
+.introduction p {
+    padding: 0 3rem 1.5rem 2rem;
+}
+
+/* The Facts Slideshow */
+.facts-slideshow {
+    background-color: pink;
+}
+
+
+/*  */
+
+@media only screen and (max-width: 1410px) {
+    
+    body {
+        /* background-color: lightblue; */
+    }
+
+    .flex-container-navbar {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        /* background-color: pink; */
+    }
+
+    .flex-container-navbar {
+        position: initial;
+    }
+
+    .flex-container-navbar ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .flex-container-navbar ul li {
+        background: lightblue;
+        text-align: center;
+        margin: 5px 0 0 0;
+        border: 2px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    ul li a {
+        color: #333;
+    }
+    .flex-container-navbar ul li:hover {
+        background: steelblue;
+    }
+
 }
