@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #F68328;
+    --secondary-color: #A17188;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F68328;
+    padding-top: 150px;
+}
+h1 {
+    color: #fff;
+    text-align: left;
+}
+.navbar {
+    background: var(--primary-color) !important;
+    margin-bottom: 200px;
+}
+.nav-link {
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    text-decoration: none;
+    color: #fff !important;
+    transition: color .2s ease;
+}
+.nav-link:hover {
+    color: #555 !important;
+}
+
+.nav-item {
+    align-self: center;
+}
+
+.logo {
+    font-size: 2rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.nav-anchor:hover {
+    color: #ccc;
+}
+
+.card img {
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    color: #fff;
+    text-align: center;
+}
+.container {
+
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+        font-size: 1.5rem;
+        width:50vw;
+        padding: 10px 0 10px 0;
+        text-align: center;
+        border-bottom: 2px solid var(--secondary-color);
+    }
+    .logo {
+        color: #555 !important;
+    }
+}
